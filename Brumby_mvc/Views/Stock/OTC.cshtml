@@ -1,7 +1,7 @@
 ﻿@using Brumby_mvc.Models;
 @{
     //Layout = null;
-    List<otcTurnoverate> data = ViewBag.OTCturnoverate;
+    List<otc> data = ViewBag.OTC;
 }
 
 @*<button>@Html.ActionLink("GetOTCturnoverate", "GetOTCturnoverate")</button>*@
@@ -43,29 +43,51 @@
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
-                                                <th>s_date</th>
-                                                <th>s_rank</th>
-                                                <th>s_id</th>
-                                                <th>s_name</th>
-                                                <th>s_deal</th>
-                                                <th>s_market</th>
-                                                <th>s_turnoverate</th>
+                                                <th>Date</th>
+                                                <th>Id</th>
+                                                <th>Type</th>
+                                                <th>Name</th>
+                                                <th>Open</th>
+                                                <th>High</th>
+                                                <th>Low</th>
+                                                <th>Close</th>
+                                                <th>UpDown</th>
+                                                <th>DealVolume</th>
+                                                <th>DealNums</th>
+                                                <th>DealPrice</th>
+                                                <th>LastBuyPrice</th>
+                                                <th>LastSellPrice</th>
+                                                <th>NowCapital</th>
+                                                <th>MaxPriceT</th>
+                                                <th>MinPriceT</th>
+                                                <th>TurnoverRate</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             @{
                                                 if (data != null)
                                                 {
-                                                    foreach (otcTurnoverate item in data)
+                                                    foreach (otc item in data)
                                                     {
                                                         <tr>
-                                                            <th scope="row">@item.s_date</th>
-                                                            <td>@item.s_rank</td>
-                                                            <td>@item.s_id</td>
-                                                            <td>@item.s_name</td>
-                                                            <td>@item.s_deal</td>
-                                                            <td>@item.s_market</td>
-                                                            <td>@item.s_turnoverate</td>
+                                                            <th scope="row">@item.Date</th>
+                                                            <td>@item.Id</td>
+                                                            <td>@item.Type</td>
+                                                            <td>@item.Name</td>
+                                                            <td>@item.Open</td>
+                                                            <td>@item.High</td>
+                                                            <td>@item.Low</td>
+                                                            <td>@item.Close</td>
+                                                            <td>@item.UpDown</td>
+                                                            <td>@item.DealVolume</td>
+                                                            <td>@item.DealNums</td>
+                                                            <td>@item.DealPrice</td>
+                                                            <td>@item.LastBuyPrice</td>
+                                                            <td>@item.LastSellPrice</td>
+                                                            <td>@item.NowCapital</td>
+                                                            <td>@item.MaxPriceT</td>
+                                                            <td>@item.MinPriceT</td>
+                                                            <td>@item.TurnoverRate</td>
                                                         </tr>
                                                     }
                                                 }
