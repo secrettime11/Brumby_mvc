@@ -24,6 +24,7 @@ namespace Brumby_mvc.Controllers
         }
         public ActionResult GetOTCturnoverate()
         {
+            Console.WriteLine("Bag");
             return RedirectToAction("OTC");
         }
     }
