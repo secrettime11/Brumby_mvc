@@ -126,10 +126,11 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StockController.cs" />
     <Compile Include="cs\Stock\OTC.cs" />
-    <Compile Include="cs\Stock\Parse.cs" />
+    <Compile Include="cs\Stock\function.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\otc.cs" />
     <Compile Include="Models\otcTurnoverate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

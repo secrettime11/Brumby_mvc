@@ -8,7 +8,7 @@ namespace Brumby_mvc.Controllers
 {
     public class StockController : Controller
     {
-        List<Models.otcTurnoverate> data = new List<Models.otcTurnoverate>();
+        List<Models.otc> data = new List<Models.otc>();
         // GET: Stock
         public ActionResult Listed()
         {
@@ -18,8 +18,8 @@ namespace Brumby_mvc.Controllers
         public ActionResult OTC()
         {
             cs.Stock.OTC otc = new cs.Stock.OTC();
-            data = otc.ParseOTCTurnoverInfo("111/09/20");
-            ViewBag.OTCturnoverate = data;
+            data = otc.ParseOTCInfo("111/09/20");
+            ViewBag.OTC = data;
             return View();
         }
         public ActionResult GetOTCturnoverate()
