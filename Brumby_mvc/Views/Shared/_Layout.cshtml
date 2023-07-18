@@ -19,7 +19,7 @@
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Fa Fa Land</span></a>
+                        <a href="~/Views/Home/Index.cshtml" class="site_title"><i class="fa fa-paw"></i> <span>Eric</span></a>
                     </div>
 
                     <div class="clearfix"></div>
@@ -46,6 +46,14 @@
                             <ul class="nav side-menu">
                                 <li>
                                     <a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li>@Html.ActionLink("Index", "Index", "Home")</li>
+                                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a><i class="fa fa-stop-circle"></i> Stock <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li>@Html.ActionLink("OTC", "OTC", "Stock")</li>
                                         <li>@Html.ActionLink("Listed", "About", "Home")</li>
@@ -131,7 +139,7 @@
                                         <a>
                                             <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                                             <span>
-                                                <span>John Smith</span>
+                                                <span>Type of service</span>
                                                 <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
@@ -195,7 +203,7 @@
             <!-- /footer content -->
         </div>
     </div>
-    
+
     @Scripts.Render("~/Scripts/js")
 </body>
 </html>

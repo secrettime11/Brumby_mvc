@@ -5,8 +5,6 @@ VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brumby_mvc", "Brumby_mvc\Brumby_mvc.csproj", "{AB709B79-7B9D-420A-AEE3-7CCC5AC3033A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sqlCRUD", "..\..\mvcCRUD\sqlCRUD\sqlCRUD.csproj", "{2BCC7C1D-2FBE-4BD1-8924-6091FA2865D6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock", "..\..\Stock2022v\Stock\Stock.csproj", "{A1979AA3-307B-45B9-9BDD-C16F141BB639}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{AB709B79-7B9D-420A-AEE3-7CCC5AC3033A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB709B79-7B9D-420A-AEE3-7CCC5AC3033A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB709B79-7B9D-420A-AEE3-7CCC5AC3033A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2BCC7C1D-2FBE-4BD1-8924-6091FA2865D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2BCC7C1D-2FBE-4BD1-8924-6091FA2865D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2BCC7C1D-2FBE-4BD1-8924-6091FA2865D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2BCC7C1D-2FBE-4BD1-8924-6091FA2865D6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A1979AA3-307B-45B9-9BDD-C16F141BB639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A1979AA3-307B-45B9-9BDD-C16F141BB639}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1979AA3-307B-45B9-9BDD-C16F141BB639}.Release|Any CPU.ActiveCfg = Release|Any CPU
